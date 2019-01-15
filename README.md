@@ -19,17 +19,10 @@ const Col = Grid.Col;
   <Col span={12}>col-12</Col>
   <Col span={12}>col-12</Col>
 </Row>
-// flex布局
-<Row type="flex" justify="center">
-  <Col span={4}>col-4 center</Col>
-  <Col span={4}>col-4 center</Col>
-  <Col span={4}>col-4 center</Col>
-  <Col span={4}>col-4 center</Col>
-</Row>
-// offset偏移
-<Row>
-  <Col span={8}>col-8</Col>
-  <Col span={8} offset={8}>col-8 col-offset-8</Col>
+// flex布局 offset偏移
+<Row type="flex" justify="space-around">
+  <Col span={6} offset={6}>col-6</Col>
+  <Col span={6}>col-6</Col>
 </Row>
 // 区块间隔
 <Row gutter={16}>
@@ -48,8 +41,7 @@ const Col = Grid.Col;
   defaultCurrent={1} // 默认第几页
   total={990} // 总条数
   pageSize={20} // 每页多少条
-  onChange={this.pageChange.bind(this)} // 点击回调
-/> 
+  onChange={this.pageChange.bind(this)} />
 ```
 
 #### 持续更新中...
