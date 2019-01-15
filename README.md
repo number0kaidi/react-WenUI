@@ -19,11 +19,13 @@ const Col = Grid.Col;
   <Col span={12}>col-12</Col>
   <Col span={12}>col-12</Col>
 </Row>
+
 // flex布局 offset偏移
 <Row type="flex" justify="space-around">
   <Col span={6} offset={6}>col-6</Col>
   <Col span={6}>col-6</Col>
 </Row>
+
 // 区块间隔
 <Row gutter={16}>
   <Col span={6}>col-6</Col>
