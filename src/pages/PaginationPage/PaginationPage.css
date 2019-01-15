@@ -1,0 +1,16 @@
+.paginationPage {
+  padding: 50px;
+}
+
+.paginationPage .title {
+  font-size: 18px;
+}
+
+.paginationPage .wrap {
+  border: 1px solid #d9d9dd;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

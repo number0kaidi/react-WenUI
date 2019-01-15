@@ -1,0 +1,21 @@
+.lazyLoad ul {
+  list-style: none;
+  width: 64vw;
+  margin: 0 auto;
+}
+
+.lazyLoad ul li{
+  width: 16vw;
+  height: 16vw;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.lazyLoad ul li img{
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+}

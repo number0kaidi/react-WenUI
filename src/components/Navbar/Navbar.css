@@ -1,0 +1,30 @@
+.navBar {
+  width: 16vw;
+  list-style: none;
+  min-height: 100vh;
+  border-right: 1px solid #e8e8e8;
+  padding: 0;
+  min-width: 240px;
+}
+.navBar li {
+  float: right;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.navBar li .link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  color: #000;
+}
+
+.navBar li.active .link {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
