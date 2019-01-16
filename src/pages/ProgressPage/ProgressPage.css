@@ -1,0 +1,25 @@
+.ProgressPage {
+  padding: 50px;
+  
+}
+
+.ProgressPage .wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ProgressPage button {
+  width: 100px;
+  height: 40px;
+  background: #1890ff;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}

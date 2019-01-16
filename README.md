@@ -46,6 +46,24 @@ const Col = Grid.Col;
   onChange={this.pageChange.bind(this)} />
 ```
 
+#### Progress 进度条
+
+```javascript
+// 基于 svg 的进度条组件 progress 进度 color 颜色
+
+// 环形进度条 type
+<Progress type="circle" progress={80} color="#1890ff" />
+
+// 自定义宽度 width
+<Progress type="circle" progress={60} color="orange" width={300} />
+  
+// 直线形进度条    
+<Progress progress={100} color="#ff520e" />
+    
+// 自定义宽度 width   
+<Progress progress={40} color="skyblue" width={500} />
+```
+
 #### 持续更新中...
 
 

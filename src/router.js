@@ -2,6 +2,7 @@ import Home from './pages/Home/Home';
 import LazyLoadPage from './pages/LazyLoadPage/LazyLoadPage';
 import GridPage from './pages/GridPage/GridPage';
 import PaginationPage from './pages/PaginationPage/PaginationPage';
+import ProgressPage from './pages/ProgressPage/ProgressPage';
 
 export default [
   {
@@ -25,13 +26,8 @@ export default [
     component: PaginationPage,
   },
   {
-    title: 'Modal 对话框',
-    path: '/Modal',
-    component: Home,
-  },
-  {
-    title: 'Carousel 走马灯',
-    path: '/Carousel',
-    component: Home,
+    title: 'Progress 分页',
+    path: '/Progress',
+    component: ProgressPage,
   },
 ]
