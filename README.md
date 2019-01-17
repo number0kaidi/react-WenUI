@@ -49,19 +49,19 @@ const Col = Grid.Col;
 #### Progress 进度条
 
 ```javascript
-// 基于 svg 的进度条组件 progress 进度 color 颜色
+// 基于 svg 的进度条组件 percentage 进度 color 颜色
 
 // 环形进度条 type
-<Progress type="circle" progress={80} color="#1890ff" />
+<Progress type="circle" percentage={80} color="#1890ff" />
 
 // 自定义宽度 width
-<Progress type="circle" progress={60} color="orange" width={300} />
+<Progress type="circle" percentage={60} color="orange" width={300} />
   
 // 直线形进度条    
-<Progress progress={100} color="#ff520e" />
+<Progress percentage={100} color="#ff520e" />
     
 // 自定义宽度 width   
-<Progress progress={40} color="skyblue" width={500} />
+<Progress percentage={40} color="skyblue" width={500} />
 ```
 
 #### 持续更新中...
