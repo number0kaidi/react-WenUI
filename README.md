@@ -20,7 +20,7 @@ const Col = Grid.Col;
   <Col span={12}>col-12</Col>
 </Row>
 
-// flex布局 offset偏移
+// flex 布局 offset 偏移
 <Row type="flex" justify="space-around">
   <Col span={6} offset={6}>col-6</Col>
   <Col span={6}>col-6</Col>
