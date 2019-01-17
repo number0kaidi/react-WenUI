@@ -26,7 +26,7 @@ export default [
     component: PaginationPage,
   },
   {
-    title: 'Progress 分页',
+    title: 'Progress 进度条',
     path: '/Progress',
     component: ProgressPage,
   },

@@ -8,7 +8,7 @@ class Progress extends Component {
       width: props.width || 200,
       lineWidth: null,
       circlePerimeter: null,
-      percentage: props.percentage || 100,
+      percentage: props.percentage,
       isShow: true
     }
   }
@@ -22,9 +22,9 @@ class Progress extends Component {
         circlePerimeter: 3 * width / 4 * Math.PI
       })
     } else {
-      // line 的长度是 svg 的长度 - 50
+      // line 的长度是 svg 的长度 - 60
       this.setState({
-        lineWidth: width - 50
+        lineWidth: width - 60
       })
     }
   }
@@ -75,8 +75,8 @@ class Progress extends Component {
               </div> :
               <div className="lineWrap" style={{ width: width, height: 20 }}>
                 <svg width={width} height="20">
-                  <line x1="10" y1="10" x2={width - 40} y2="10" fill="none" strokeWidth="12" stroke="#e8e8e8" strokeLinecap="round" />
-                  <line x1="10" y1="10" x2={width - 40} y2="10" fill="none" strokeWidth="12" stroke={color} strokeLinecap="round" strokeDasharray={lineWidth} strokeDashoffset={oldPercentage ? lineWidth * (1 - oldPercentage / 100) : lineWidth}>
+                  <line x1="10" y1="10" x2={width - 50} y2="10" fill="none" strokeWidth="12" stroke="#e8e8e8" strokeLinecap="round" />
+                  <line x1="10" y1="10" x2={width - 50} y2="10" fill="none" strokeWidth="12" stroke={color} strokeLinecap="round" strokeDasharray={lineWidth} strokeDashoffset={oldPercentage ? lineWidth * (1 - oldPercentage / 100) : lineWidth}>
                     <animate attributeName="stroke-dashoffset" attributeType="XML" from={oldPercentage ? lineWidth * (1 - oldPercentage / 100) : lineWidth} to={lineWidth * (1 - percentage / 100)} dur="1s" fill="freeze" />
                   </line>
                 </svg>
