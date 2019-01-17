@@ -6,8 +6,17 @@ class ProgressPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      percentage: 80
+      percentage: 80,
+      autoPercentage: 66
     }
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        autoPercentage: Math.floor(Math.random() * (1 - 100) + 100)
+      })
+    }, 2000);
   }
 
   changePercentage() {
@@ -17,7 +26,7 @@ class ProgressPage extends Component {
   }
 
   render() {
-    const { percentage } = this.state;
+    const { percentage, autoPercentage } = this.state;
     return (
       <div className="ProgressPage">
         <div className="wrap">
@@ -25,7 +34,7 @@ class ProgressPage extends Component {
           <Progress type="circle" percentage={percentage} color="orange" width={300} />
           <Progress type="circle" percentage={percentage} color="hotpink" width={300} />
           <Progress type="circle" percentage={32} color="red" />
-          <Progress type="circle" percentage={66} color="purple" width={450} />
+          <Progress type="circle" percentage={autoPercentage} color="purple" width={450} />
         </div>
         <div style={{ marginTop: '40px' }}>
           <Progress percentage={48} color="#ff520e" />
